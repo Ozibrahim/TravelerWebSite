@@ -1,4 +1,4 @@
-# React eğitimi
+# TravelerWebSite
 ## Fullscreen
 ![Seyahat-gif1](https://github.com/user-attachments/assets/42b80372-b8cc-493a-b278-963b519bb590)
 ![Seyahat-gif2](https://github.com/user-attachments/assets/cdc2e2ea-9546-433e-9a06-3564db760f2e)
