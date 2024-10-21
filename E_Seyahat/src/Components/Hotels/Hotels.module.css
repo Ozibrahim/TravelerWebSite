@@ -1,0 +1,74 @@
+.HotelsWrapper {
+    flex-direction: column;
+    gap: 50px;
+    z-index: 0;
+    position: relative;
+}
+
+.card {
+    height: 380px;
+    width: 300px;
+}
+
+.card .imgWrapper {
+    height: 180px;
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 18px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 20px 0;
+    position: relative;
+
+}
+
+.card h3::after {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 100%;
+    left: 0;
+    transition: 0.6s;
+}
+
+.card h3:nth-child(2):after {
+    transition: 1s;
+}
+
+.card:hover h3::after {
+    width: 100%;
+}
+
+.card:hover h3:nth-child(3):after {
+    width: 25%;
+}
+
+
+.card .imgWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100% !important;
+}
+
+.card p span {
+    padding: 5px;
+    background-color: rgb(123, 160, 192);
+    color: #eef2ff;
+    margin-right: 8px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card h4 {
+    color: rgb(123, 160, 192);
+}

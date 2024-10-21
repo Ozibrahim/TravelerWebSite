@@ -1,0 +1,99 @@
+.NawWrapper {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12%;
+}
+
+.navbarActive {
+    background-color: #1e1e1e;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.ContainerNav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ContainerNav .logo a {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+.ContainerNav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.ContainerNav ul li a {
+    font-size: 15px;
+    color: white;
+}
+
+.NavButtons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.NavButtons i {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    display: none;
+    color: white;
+    transition: 0.6s;
+}
+
+.NavButtons i:hover {
+    background-color: white;
+    color: black;
+
+}
+
+@media screen and (max-width:1100px) {
+    .NavButtons i {
+        display: flex;
+    }
+
+    .NawWrapper {
+        position: relative;
+    }
+
+    .NawWrapper ul {
+        position: absolute;
+        top: 100%;
+        left: 00;
+        width: 100%;
+        border-bottom: 1px solid white;
+        background-color: black;
+        height: 0;
+        overflow: hidden;
+        transition: 0.6s;
+    }
+
+    .NawWrapper ul li {
+        display: block;
+        margin: 40px 0;
+        padding: 20px 0;
+        padding-left: 12%;
+    }
+
+    .NawWrapper ul li a {
+        font-size: 18px;
+    }
+
+    .NawWrapper .activeNav {
+        height: 55vh;
+    }
+
+}
